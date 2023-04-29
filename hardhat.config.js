@@ -9,7 +9,7 @@ require("dotenv").config();
 const RPC_URL =
     "https://eth-sepolia.g.alchemy.com/v2/SYu8cyWG0EOfcfZVehXUoPMXW91om6Hd";
 const PVT_KEY =
-    "cf6111d65d0e0b7b319fd7f5c64dc57cea1405adab706d4f9edb4852a4121634";
+    "privatekey";
 const CHAIN_ID = 11155111;
 const API_KEY = "91Y7P3IIZBKAACGWTHB93ZSG62ENS3AFQX";
 module.exports = {
