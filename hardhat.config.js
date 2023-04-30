@@ -1,16 +1,11 @@
 require("@nomicfoundation/hardhat-toolbox");
 require("dotenv").config();
 
-const RPC_URL = process.env.SEPOLIA_RPC_URL;
-const PVT_KEY = process.env.SEPOLIA_PVT_KEY;
-const CHAIN_ID = process.env.SEPOLIA_CHAIN_ID;
+const RPC_URL = process.env.S_RPC_URL;
+const PVT_KEY = process.env.S_P_KEY;
+const CHAIN_ID = 11155111;
 
-// commented section is working
-// const RPC_URL =
-//     "https://eth-sepolia.g.alchemy.com/v2/SYu8cyWG0EOfcfZVehXUoPMXW91om6Hd";
-// const PVT_KEY =
-//     "privatekey";
-// const CHAIN_ID = 11155111;
+// const CHAIN_ID=process.env.S_CHAIN_ID;
 
 module.exports = {
     defaultNetwork: "hardhat",
@@ -22,7 +17,6 @@ module.exports = {
         },
     },
     solidity: "0.8.18",
-    
 };
 
 task("accounts", "Prints the list of accounts", async () => {
