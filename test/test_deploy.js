@@ -14,7 +14,8 @@ describe("SimpleStorage", function () {
     });
     it("input value equal to stored value", async function () {
         const storing = "55";
-        const retireve = await Simplefactory.store(storing);
-        assert.equal(storing.toString(), await Simplefactory.retrieve());
+        await Simplefactory.store(storing);
+        const retireve = await Simplefactory.retrieve();
+        assert.equal(retireve, storing);
     });
 });
